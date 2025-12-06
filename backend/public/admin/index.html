@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Contact Messages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📧 Contact Messages Admin Panel</h1>
+            <div class="header-actions">
+                <button id="refreshBtn" class="btn-secondary">🔄 Refresh</button>
+                <div class="stats">
+                    <span id="totalCount">0</span> total | 
+                    <span id="unreadCount">0</span> unread
+                </div>
+            </div>
+        </header>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by name or email...">
+            </div>
+            <div class="filters">
+                <select id="serviceFilter">
+                    <option value="all">All Services</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Photography">Photography</option>
+                    <option value="Logo Design">Logo Design</option>
+                    <option value="Data Analysis">Data Analysis</option>
+                    <option value="Data Entry">Data Entry</option>
+                </select>
+                <select id="statusFilter">
+                    <option value="all">All Status</option>
+                    <option value="unread">Unread Only</option>
+                    <option value="read">Read Only</option>
+                </select>
+                <button id="markAllReadBtn" class="btn-secondary">Mark All as Read</button>
+            </div>
+        </div>
+
+        <div id="loading" class="loading">Loading messages...</div>
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="messagesContainer" class="messages-container"></div>
+        <div id="noMessages" class="no-messages" style="display: none;">
+            <p>No messages found.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
