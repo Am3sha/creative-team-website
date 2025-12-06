@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Creative Solutions Team - Portfolio Website
 
 A modern, responsive portfolio website built with React and React Router.
@@ -94,3 +95,7 @@ src/
 
 This project is open source and available for use.
 
+=======
+# creative-team-website
+A modern, responsive website for our Creative Solutions Team, offering web development, logo design, data analysis, and data entry services.
+>>>>>>> 4b8eddf5fa2c544c9513de5f433ccb4387e0ffd1
